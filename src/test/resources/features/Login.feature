@@ -6,3 +6,9 @@ Feature: As user I want to be able to login under different roles
     Given user is on the login page
     When user logs in
     Then user should see dashboard page
+
+    @parametrized_test
+    Scenario: Parametrized login
+      Given user is on the login page
+      When user logs in as a "store manager"
+      Then user should see dashboard page

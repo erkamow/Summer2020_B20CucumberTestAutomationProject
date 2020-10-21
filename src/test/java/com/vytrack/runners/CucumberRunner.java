@@ -7,7 +7,11 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src\\test\\resources\\features",// copied from content root "feature"
                    glue = "com\\vytrack\\step_definitions",  // copied from source root " step definitions"
-                    dryRun = false)
+                    dryRun = false,
+                    tags = "@parametrized_test"
+
+)
+
 
 public class CucumberRunner {
     // running cucumber test scenarios
