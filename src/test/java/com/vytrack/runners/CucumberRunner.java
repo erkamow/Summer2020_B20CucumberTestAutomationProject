@@ -8,9 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "src\\test\\resources\\features",// copied from content root "feature"
                    glue = "com\\vytrack\\step_definitions",  // copied from source root " step definitions"
                     dryRun = false,
-                    tags = "@parametrized_test"
-
-)
+                    tags = "@calendar_events",
+                    publish = true)
 
 
 public class CucumberRunner {
